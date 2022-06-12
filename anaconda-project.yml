@@ -12,6 +12,12 @@ commands:
   default:
     unix: panel serve plot.ipynb
     supports_http_options: True
+  notebook:
+    notebook: .
+
+variables:
+  BOKEH_ALLOW_WS_ORIGIN:
+    default: "*"
 
 platforms:
   - osx-arm64
