@@ -1,8 +1,6 @@
 # Autompg panel dashboard on Saturn Cloud
 
-<a href=https://app.community.saturnenterprise.io/dash/resources?recipeUrl=https://raw.githubusercontent.com/albertdefusco/autompg-deployment/main/.saturn/saturn.json target="_blank" rel="noopener">
-  <img src="https://saturncloud.io/images/embed/run-in-saturn-cloud.svg" alt="Run in Saturn Cloud"/>
-</a>
+[![Run in Saturn Cloud](https://saturncloud.io/images/embed/run-in-saturn-cloud.svg)](https://app.community.saturnenterprise.io/dash/resources?recipeUrl=https://raw.githubusercontent.com/albertdefusco/autompg-deployment/main/.saturn/saturn.json)
 
 This project demonstrates how to use [Anaconda Project](https://anaconda-project.readthedocs.io/) and
 [Saturn Cloud Resource Recipes](https://saturncloud.io/docs/using-saturn-cloud/recipes/) to deploy a
