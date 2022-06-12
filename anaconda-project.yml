@@ -1,0 +1,20 @@
+name: autompg-deployment
+
+packages:
+  - python=3.8
+  - notebook
+  - pandas
+  - lxml
+  - panel
+  - hvplot
+
+commands:
+  default:
+    unix: panel serve plot.ipynb
+    supports_http_options: True
+
+platforms:
+  - osx-arm64
+  - osx-64
+  - win-64
+  - linux-64
