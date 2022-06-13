@@ -3,7 +3,7 @@
   "image_uri": "public.ecr.aws/saturncloud/saturn:2022.04.01",
   "description": "",
   "environment_variables": {
-    "ANACONDA_PROJECT_ENVS_PATHS": "/home/jovyan/.conda/envs"
+    "ANACONDA_PROJECT_ENVS_PATH": "/home/jovyan/.conda/envs"
   },
   "working_directory": "/home/jovyan/workspace/autompg-deployment",
   "extra_packages": {
@@ -12,7 +12,7 @@
       "use_mamba": true
     }
   },
-  "start_script": "anaconda-project prepare\nanaconda-project run python -m ipykernel install --user --name \"default\" --display-name \"Python 3 (default)\"\njupyter kernelspec uninstall python3 -y\necho \"c.KernelSpecManager.ensure_native_kernel = False\" > /home/jovyan/.jupyter/jupyter_sever_config.py",
+  "start_script": "anaconda-project prepare\nanaconda-project run python -m ipykernel install --user --name \"default\" --display-name \"Python 3 (default)\"\necho \"c.KernelSpecManager.ensure_native_kernel = False\" > /home/jovyan/.jupyter/jupyter_notebook_config.py",
   "git_repositories": [
     {
       "url": "git@github.com:AlbertDeFusco/autompg-deployment.git",
