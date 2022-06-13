@@ -5,7 +5,7 @@
   "environment_variables": {
     "ANACONDA_PROJECT_ENVS_PATH": "/home/jovyan/.conda/envs"
   },
-  "working_directory": "/home/jovyan/workspace/autompg-deployment",
+  "working_directory": "/home/jovyan/workspace/autompg",
   "extra_packages": {
     "conda": {
       "install": "anaconda-project",
@@ -15,8 +15,8 @@
   "start_script": "anaconda-project prepare\nanaconda-project run python -m ipykernel install --user --name \"python3\" --display-name \"Python 3 (default)\"",
   "git_repositories": [
     {
-      "url": "git@github.com:AlbertDeFusco/autompg-deployment.git",
-      "path": "/home/jovyan/workspace/autompg-deployment",
+      "url": "git@github.com:AlbertDeFusco/autompg.git",
+      "path": "/home/jovyan/workspace/autompg",
       "public": false,
       "on_restart": "reclone",
       "reference": null,
