@@ -12,7 +12,7 @@
       "use_mamba": true
     }
   },
-  "start_script": "anaconda-project prepare\nanaconda-project run python -m ipykernel install --user --name \"python3\" --display-name \"Python 3 (default)\"", //\necho \"c.KernelSpecManager.ensure_native_kernel = False\" > /home/jovyan/.jupyter/jupyter_notebook_config.py",
+  "start_script": "anaconda-project prepare\nanaconda-project run python -m ipykernel install --user --name \"python3\" --display-name \"Python 3 (default)\"",
   "git_repositories": [
     {
       "url": "git@github.com:AlbertDeFusco/autompg-deployment.git",
