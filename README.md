@@ -1,8 +1,8 @@
 # Autompg panel dashboard on Saturn Cloud
 
-[![Deploy Dashboard in Saturn Cloud](https://saturncloud.io/images/embed/run-in-saturn-cloud.svg)](https://app.community.saturnenterprise.io/dash/resources?recipeUrl=https://raw.githubusercontent.com/albertdefusco/autompg-deployment/main/.saturn/deployment.json)
+[![Deploy Dashboard in Saturn Cloud](https://app.community.saturnenterprise.io/favicon.svg)](https://app.community.saturnenterprise.io/dash/resources?recipeUrl=https://raw.githubusercontent.com/albertdefusco/autompg-deployment/main/.saturn/deployment.json)
 
-[![Launch in Jupyter on Saturn Cloud](https://saturncloud.io/images/embed/run-in-saturn-cloud.svg)](https://app.community.saturnenterprise.io/dash/resources?recipeUrl=https://raw.githubusercontent.com/albertdefusco/autompg-deployment/main/.saturn/jupyter.json)
+[![Launch in Jupyter on Saturn Cloud](https://app.community.saturnenterprise.io/favicon.svg)](https://app.community.saturnenterprise.io/dash/resources?recipeUrl=https://raw.githubusercontent.com/albertdefusco/autompg-deployment/main/.saturn/jupyter.json)
 
 This project demonstrates how to use [Anaconda Project](https://anaconda-project.readthedocs.io/) and
 [Saturn Cloud Resource Recipes](https://saturncloud.io/docs/using-saturn-cloud/recipes/) to deploy a
