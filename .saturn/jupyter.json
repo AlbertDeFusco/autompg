@@ -1,5 +1,5 @@
 {
-  "name": "autompg",
+  "name": "autompg-jupyter",
   "image_uri": "public.ecr.aws/saturncloud/saturn:2022.04.01",
   "description": "",
   "environment_variables": {
