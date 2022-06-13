@@ -1,6 +1,8 @@
 # Autompg panel dashboard on Saturn Cloud
 
-[![Run in Saturn Cloud](https://saturncloud.io/images/embed/run-in-saturn-cloud.svg)](https://app.community.saturnenterprise.io/dash/resources?recipeUrl=https://raw.githubusercontent.com/albertdefusco/autompg-deployment/main/.saturn/saturn.json)
+[![Deploy Dashboard in Saturn Cloud](https://saturncloud.io/images/embed/run-in-saturn-cloud.svg)](https://app.community.saturnenterprise.io/dash/resources?recipeUrl=https://raw.githubusercontent.com/albertdefusco/autompg-deployment/main/.saturn/deployment.json)
+
+[![Launch in Jupyter on Saturn Cloud](https://saturncloud.io/images/embed/run-in-saturn-cloud.svg)](https://app.community.saturnenterprise.io/dash/resources?recipeUrl=https://raw.githubusercontent.com/albertdefusco/autompg-deployment/main/.saturn/jupyter.json)
 
 This project demonstrates how to use [Anaconda Project](https://anaconda-project.readthedocs.io/) and
 [Saturn Cloud Resource Recipes](https://saturncloud.io/docs/using-saturn-cloud/recipes/) to deploy a
@@ -13,11 +15,11 @@ The `anaconda-project.yml` file in this repository defines the reproducible elem
 * Runtime environment variables
 * Runable commands for development and deployment
 
-You will see in the `.saturn/saturn.json` Saturn Cloud recipe file that the only dependency that Saturn will install
-is `anaconda-project`. When `anaconda-project run <command-name>` is executed during the Saturn Cloud deployment
+You will see in the `.saturn/` directory two Saturn Cloud recipe files that Saturn Cloud will install `anaconda-project`
+on startup. When `anaconda-project run <command-name>` is executed during the Saturn Cloud deployment
 initialization all dependencies defined in the `anaconda-project.yml` will be automatically installed.
 
-This means that the Saturn Cloud recipe here can be used for any project using anaconda-project. The only items that
+This means that the Saturn Cloud recipes here can be used for any project using anaconda-project. The only items that
 would need to be changed are `working_directory`, `git_repositories.url`, and `git_repositories.path` to the correct
 values for your own repo.
 

@@ -1,0 +1,37 @@
+{
+  "name": "autompg",
+  "image_uri": "public.ecr.aws/saturncloud/saturn:2022.04.01",
+  "description": "",
+  "environment_variables": {
+    "ANACONDA_PROJECT_ENVS_PATHS": "/home/jovyan/.conda/envs"
+  },
+  "working_directory": "/home/jovyan/workspace/autompg-deployment",
+  "extra_packages": {
+    "conda": {
+      "install": "anaconda-project",
+      "use_mamba": true
+    }
+  },
+  "start_script": "anaconda-project prepare\nanaconda-project run python -m ipykernel install --user --name \"default\" --display-name \"Python 3 (default)\"\njupyter kernelspec uninstall python3 -y\nconda env remove -n saturn -y",
+  "git_repositories": [
+    {
+      "url": "git@github.com:AlbertDeFusco/autompg-deployment.git",
+      "path": "/home/jovyan/workspace/autompg-deployment",
+      "public": false,
+      "on_restart": "reclone",
+      "reference": null,
+      "reference_type": "branch"
+    }
+  ],
+  "secrets": [],
+  "jupyter_server": {
+    "instance_type": "medium",
+    "disk_space": "10Gi",
+    "auto_shutoff": "1 hour",
+    "start_ssh": true,
+    "use_spot_instance": false
+  },
+  "owner": "adefusco",
+  "visibility": "owner",
+  "schema_version": "2022.05.01"
+}
