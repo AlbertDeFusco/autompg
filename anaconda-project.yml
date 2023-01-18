@@ -9,7 +9,7 @@ packages:
   - hvplot
 
 commands:
-  default:
+  dashboard:
     unix: panel serve plot.ipynb
     supports_http_options: True
   notebook:
@@ -24,3 +24,4 @@ platforms:
   - osx-64
   - win-64
   - linux-64
+  - linux-aarch64
